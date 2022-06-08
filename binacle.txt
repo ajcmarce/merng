@@ -1,1 +1,4 @@
-- Video detenido en 1:46:00
+- Video detenido en 2:08:00
+
+
+RECUERDA ==> el authorization token debe ingresarse en cada pestaña de Apollo
