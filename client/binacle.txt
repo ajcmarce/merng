@@ -1,0 +1,3 @@
+Video time: 02:39:21
+
+ATENTION: Open the client project in separate vscode instance
