@@ -1,3 +1,3 @@
-Video time: 03:09:25
+Video time: 03:41:00
 
 ATENTION: Open the client project in separate vscode instance

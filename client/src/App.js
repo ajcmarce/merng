@@ -9,21 +9,23 @@ import MenuBar from './components/MenuBar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-
-
+import { AuthProvider } from './context/auth';
+import AuthRoute from './utils/authRoute';
 
 function App() {
   return (
-      <Router>
+    <AuthProvider>
+      <Router >
         <Container>
           <MenuBar/>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/Login" element={<Login />} />
-            <Route exact path="/Register" element={<Register />} />
+            <Route exact path="/Login" element={<AuthRoute ifNotAuth="/" component={<Login />} />} />
+            <Route exact path="/Register" element={<AuthRoute ifNotAuth="/" component={<Register />} />} />
           </Routes>  
         </Container>
       </Router>
+    </AuthProvider>
   );
 }
 
