@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import * as serviceWorker from './serviceWorker';
 import ApolloProvider from './ApolloProvider';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(ApolloProvider);
+ReactDOM.render(ApolloProvider, document.getElementById('root'));
 
-
+//serviceWorker.unregister();
